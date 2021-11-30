@@ -9,6 +9,11 @@ resource "spacelift_context" "managed" {
   description = "Your first context managed by Terraform"
 }
 
+resource "spacelift_context" "managed2" {
+  name        = "Managed context in a push"
+  description = "Your first context managed by Terraform"
+}
+
 # This is an envioronment variable defined on the context level. When the
 # context is attached to the stack, this variable will be added to the stack's
 # own environment. And that's how we do configuration reuse here at Spacelift.
